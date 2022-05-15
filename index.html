@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dest/output.css">
+    <title>Document</title>
+</head>
+<body>
+<!---------------------header section----------------------------------->    
+<nav class="bg-white border-gray-200 px-2 py-2.5 dark:bg-gray-800 overflow-hidden fixed top-0 w-full z-10">
+    <div class="container flex justify-between">
+        <span class="font-bold text-2xl mx-20 text-white"> <a class="" href=""><span class="text-amber-300">Keep</span>  Notes</a> </span>
+        <div class="links">
+            <ul class="flex "> 
+                <li class="mx-3 text-lg text-white hover:text-slate-400"><a href="#">About</a></li>
+                <li class="mx-3 text-lg text-white hover:text-slate-400"><a href="#">Services</a></li>
+                <li class="mx-3 text-lg text-white hover:text-slate-400"><a href="#">Home</a></li>
+                <li class="mx-3 text-lg text-white hover:text-slate-400"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="search mx-10">
+            <input id="searchTxt"class="rounded focus:outline-none border-gray-300 p-1" type="search" placeholder="Type Here">
+            <button class="bg-white p-1 rounded hover:text-white hover:bg-amber-300 border-b-slate-400 border-1  ">Search</button>
+        </div>
+    </div>
+    </nav>
+    <!---------------------Header section ended-------------------->
+    <!---------------------------Content Section Started------------------------>
+    <div class="content bg-slate-500 w-3/4 m-auto my- rounded min-h-screen relative mt-[54px]">
+        <h1 class="text-4xl text-white font-mono font-bold text-center ">Welcome to Keep Notes</h1>
+        <h1 class="mx-2 text-lg font-medium">Add Note:</h1>
+        <textarea id="addtxt" class="bg-transparent resize-none border rounded-md focus:outline-none p-2 m-2" name="" id="" cols="50" rows="5" placeholder="Type note here and hit add button....."></textarea>
+        <div>
+            <button id="addbtn" class="m-2 bg-white border-white rounded p-1 hover:bg-amber-300 hover:text-white" type="submit">Add Text</button>
+        </div>
+        <p class="bg-gray-900 border-1 w-full m-auto my-2 h-[1px]"></p>
+
+<!------------------nOTES AREA------------>
+
+        <h1 class="text-lg font-medium mx-2">Your Notes:</h1>
+        <div id="notes" class=" m-2 grid grid-flow-rows grid-cols-4 gap-4">
+            <!-- <div class="rounded-lg shadow-lg border flex bg-transparent">
+              <div class="p-6">
+                <h5 class="text-white text-xl font-medium mb-1"></h5>
+                <p class="text-gray-700 text-base mb-4">
+                </p>
+                <button class="m-1 items-center bg-white border-white rounded p-1 hover:bg-amber-300 hover:text-white" type="submit">Delete</button>
+              </div>
+            </div> -->
+            
+          </div>
+    </div>
+    <script src="/style.js"></script>
+</body>
+</html>
